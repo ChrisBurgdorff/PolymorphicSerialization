@@ -4,9 +4,11 @@ using System.Text.Json;
 
 Console.WriteLine("Hello, World!");
 
-Zebra zebra = new Zebra();
+Horse zebra = new Horse();
 zebra.Amount = 15;
 zebra.Name = "Barry";
+zebra.Age = 30;
+zebra.Color = "Blue";
 
 Hoof hoof = new Hoof();
 hoof.NumberOfToes = 1;

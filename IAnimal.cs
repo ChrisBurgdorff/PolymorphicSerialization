@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace SerializationTest
 {
     [JsonDerivedType(typeof(Zebra))]
+    [JsonDerivedType(typeof(Horse))]
     interface IAnimal
     {
     }
