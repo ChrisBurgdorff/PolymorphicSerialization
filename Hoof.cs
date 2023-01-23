@@ -11,7 +11,6 @@ namespace SerializationTest
     {
         public int NumberOfToes { get; set; }
 
-        [JsonIgnore]
-        public string TypeDiscriminator => nameof(Hoof);
+      
     }
 }

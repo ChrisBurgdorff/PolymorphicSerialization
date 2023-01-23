@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace SerializationTest
 {
-    interface IAnimal : ITypeDiscriminator
+    [JsonDerivedType(typeof(Zebra))]
+    interface IAnimal
     {
     }
 }

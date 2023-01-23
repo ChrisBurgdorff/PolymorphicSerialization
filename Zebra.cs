@@ -15,7 +15,5 @@ namespace SerializationTest
         public bool HasStripes = true;
         public IFoot Foot { get; set; }
 
-        [JsonIgnore]
-        public string TypeDiscriminator => nameof(Zebra);
     }
 }

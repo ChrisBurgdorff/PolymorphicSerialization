@@ -18,11 +18,6 @@ zoo.NameOfZoo = "Bronx Zoo";
 zoo.NumberOfAnimals = 15;
 zoo.Animal = zebra;
 
-JsonSerializerOptions options = new JsonSerializerOptions()
-{
-    Converters = { new TypeDiscriminatorConverter<IAnimal>(),
-        new TypeDiscriminatorConverter<IFoot>()}
-};
 
-string serializedZoo = JsonSerializer.Serialize(zoo, options);
+string serializedZoo = JsonSerializer.Serialize(zoo, new JsonSerializerOptions());
 Console.WriteLine(serializedZoo);
